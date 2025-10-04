@@ -1,0 +1,11 @@
+
+.side_border::before{
+    content: "";
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    width: 6px;
+    height: 70%;
+    background-color: #244436;
+    transition: 0.5s;
+}

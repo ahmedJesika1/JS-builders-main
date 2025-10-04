@@ -1,0 +1,28 @@
+.animated_click{
+    position: relative;
+    transition:0.5s;
+    color: #fff;
+}
+.animated_click:hover{
+    color: #fff;
+    
+
+}
+
+.animated_click::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    pointer-events:none;
+    transition: 0.5s;
+    z-index: -5;
+    opacity:0;
+}
+.animated_click:hover::before{
+    opacity:1;
+    left:50%;
+    color: #ffffff73;
+}
